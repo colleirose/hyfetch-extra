@@ -5,7 +5,7 @@ pkgver=1.4.10.r78.g6932a9fb
 pkgrel=1
 pkgdesc="Neofetch with LGBTQ pride flags. (extra flags)"
 arch=('any')
-url='https://github.com/NepNep21/hyfetch-extra'
+url='https://git.bottomservices.club/nep/hyfetch-extra'
 license=('MIT')
 depends=('python' 'python-setuptools' 'python-typing_extensions')
 makedepends=('git')
@@ -16,7 +16,7 @@ conflicts=('hyfetch' 'hyfetch-git')
 
 pkgver() {
   cd "$pkgname"
-  git describe --long --tags | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
+  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short=7 HEAD)"
 }
 
 build() {
