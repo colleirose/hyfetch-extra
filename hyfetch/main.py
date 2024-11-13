@@ -248,7 +248,7 @@ def create_config() -> Config:
 
         # Random color schemes
         pis = list(range(len(_prs.unique_colors().colors)))
-        slots = list(set(re.findall('(?<=\\${c)[0-9](?=})', asc)))
+        slots = list(set(map(int, re.findall('(?<=\\${c)[0-9](?=})', asc))))
         while len(pis) < len(slots):
             pis += pis
         perm = {p[:len(slots)] for p in permutations(pis)}
@@ -309,8 +309,11 @@ def create_config() -> Config:
         printc('- &bqwqfetch&r: Pure python, &nminimal dependencies&r ' +
                ('&c(Not installed)' if not has_qwqfetch else ''))
         print()
+        
+        # Use fastfetch as the default backend if it is installed
+        def_backend = 'neofetch' if ff_path is None else 'fastfetch'
 
-        return literal_input('Your choice?', ['neofetch', 'fastfetch', 'qwqfetch'], 'neofetch')
+        return literal_input('Your choice?', ['neofetch', 'fastfetch', 'qwqfetch'], def_backend)
 
     backend = select_backend()
     update_title('Selected backend', backend)
@@ -335,7 +338,7 @@ def create_parser() -> argparse.ArgumentParser:
 
     parser.add_argument('-c', '--config', action='store_true', help=color(f'Configure hyfetch'))
     parser.add_argument('-C', '--config-file', dest='config_file', default=CONFIG_PATH, help=f'Use another config file')
-    parser.add_argument('-p', '--preset', help=f'Use preset', choices=list(PRESETS.keys()))
+    parser.add_argument('-p', '--preset', help=f'Use preset', choices=list(PRESETS.keys()) + ['random'])
     parser.add_argument('-m', '--mode', help=f'Color mode', choices=['8bit', 'rgb'])
     parser.add_argument('-b', '--backend', help=f'Choose a *fetch backend', choices=['qwqfetch', 'neofetch', 'fastfetch', 'fastfetch-old'])
     parser.add_argument('--args', help=f'Additional arguments pass-through to backend')
@@ -437,6 +440,10 @@ def run():
         config.backend = args.backend
     if args.args:
         config.args = args.args
+        
+    # Random preset
+    if config.preset == 'random':
+        config.preset = random.choice(list(PRESETS.keys()))
 
     # Override global color mode
     GLOBAL_CFG.color_mode = config.mode

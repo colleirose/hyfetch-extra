@@ -28,7 +28,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-version=7.3.11
+version=7.98.0
 
 # Fallback to a value of '5' for shells which support bash
 # but do not set the 'BASH_' shell variables (osh).
@@ -868,35 +868,37 @@ image_source="auto"
 # NOTE: Adélie, aerOS, Afterglow, AIX, AlmaLinux, Alpine, Alter, Amazon, AmogOS, Anarchy, Android,
 # Antergos, antiX, AOSC OS, Aperio GNU/Linux, Aperture, Apricity, Arch, ArchBox, Archcraft,
 # archcraft_ascii, archcraft_minimal, ARCHlabs, ArchMerge, ArchStrike, ArcoLinux, Arkane, ArseLinux,
-# Artix, Arya, Asahi, AsteroidOS, astOS, Astra Linux, Athena, azos, Bedrock, BigLinux, Bitrig, BlackArch,
-# BlackMesa, blackPanther, BLAG, BlankOn, BlueLight, Bodhi, bonsai, BSD, BunsenLabs, CachyOS, Calculate,
-# CalinixOS, Carbs, CBL-Mariner, CelOS, Center, CentOS, Chakra, ChaletOS, Chapeau, Chimera, ChonkySealOS,
-# Chrom, Cleanjaro, Clear Linux OS, ClearOS, Clover, Cobalt, Condres, Container Linux by CoreOS,
-# CRUX, Crystal Linux, Cucumber, CutefishOS, CuteOS, CyberOS, dahlia, DarkOs, Darwin, Debian,
-# Deepin, DesaOS, Devuan, DietPi, digital UNIX, DracOS, DragonFly, Drauger, Droidian, Elementary,
-# Elive, EncryptOS, EndeavourOS, Endless, Enso, EuroLinux, EvolutionOS, eweOS, Exherbo, Exodia Predator OS,
-# Fedora, FemboyOS, Feren, Finnix, Floflis, FreeBSD, FreeMiNT, Frugalware, Funtoo, Furreto, GalliumOS,
-# Garuda, Gentoo, GhostBSD, glaucus, gNewSense, GNOME, GNU, GoboLinux, GrapheneOS, Grombyang, Guix,
-# Haiku, HamoniKR, HarDClanZ, Hash, Huayra, Hybrid, HydroOS, Hyperbola, iglunix, instantOS, Interix,
-# IRIX, Ironclad, Itc, januslinux, Kaisen, Kali, KaOS, KDE, Kibojoe, Kogaion, Korora, KrassOS,
-# KSLinux, Kubuntu, LainOS, LangitKetujuh, LaxerOS, LEDE, LibreELEC, Linspire, Linux, Linux Lite,
-# Linux Mint, Linux Mint Old, Live Raizo, LMDE, Lubuntu, Lunar, mac, Mageia, Magix, MagpieOS, MainsailOS,
-# Mandriva, Manjaro, MassOS, MatuusOS, Maui, Meowix, Mer, Minix, MIRACLE LINUX, MX, Namib, NekOS,
-# Neptune, NetBSD, Netrunner, Nitrux, NixOS, Nobara, NomadBSD, Nurunner, NuTyX, Obarun, OBRevenge,
-# OmniOS, Open Source Media Center, OpenBSD, openEuler, OpenIndiana, openKylin, openmamba,
-# OpenMandriva, OpenStage, openSUSE, openSUSE Leap, openSUSE Tumbleweed, OPNsense, Oracle, orchid,
-# OS Elbrus, PacBSD, Panwah, Parabola, parch, Pardus, Parrot, Parsix, PCBSD, PCLinuxOS, pearOS,
-# Pengwin, Pentoo, Peppermint, Peropesis, phyOS, PikaOS, Pisi, PNM Linux, Pop!_OS, Porteus,
-# PostMarketOS, Profelis SambaBOX, Proxmox, PuffOS, Puppy, PureOS, Q4OS, Qubes, Qubyt, Quibian,
-# Radix, Raspbian, ravynOS, Reborn OS, Red Star, Redcore, Redhat, Refracted Devuan, Regata,
-# Regolith, RhaymOS, rocky, Rosa, Sabayon, sabotage, Sailfish, SalentOS, Salient OS, Salix, Sasanqua,
-# Scientific, semc, Septor, Serene, SharkLinux, ShastraOS, Siduction, SkiffOS, Slackel, Slackware,
-# SliTaz, SmartOS, Soda, Solus, Source Mage, Sparky, Star, SteamOS, Stock Linux, Sulin, SunOS,
-# SwagArch, t2, Tails, TeArch, TorizonCore, Trisquel, Twister, Ubuntu, Ubuntu Budgie, Ubuntu
-# Cinnamon, Ubuntu Kylin, Ubuntu MATE, Ubuntu Studio, Ubuntu Sway, Ubuntu Touch, Ubuntu-GNOME,
-# ubuntu_old02, Ultramarine Linux, unicodearch, Univalent, Univention, Uos, UrukOS, uwuntu, Vanilla,
-# Venom, VNux, Void, VzLinux, wii-linux-ngx, Windows, Windows 10, Windows 11, Windows95, Wrt, Xenia,
-# Xenia2, XFerience, Xray_OS, Xubuntu, yiffOS, Zorin have ascii logos.
+# Artix, Arya, Asahi, AsteroidOS, astOS, Astra Linux, Athena, azos, Bedrock, BigLinux,
+# BigLinux_large, Bitrig, BlackArch, BlackMesa, blackPanther, BLAG, BlankOn, BlueLight, Bodhi,
+# bonsai, BSD, BunsenLabs, CachyOS, Calculate, CalinixOS, Carbs, CBL-Mariner, CelOS, Center, CentOS,
+# Chakra, ChaletOS, Chapeau, Chimera, ChonkySealOS, Chrom, Cleanjaro, Clear Linux OS, ClearOS,
+# Clover, Cobalt, Condres, Container Linux by CoreOS, CRUX, Crystal Linux, Cucumber, CutefishOS,
+# CuteOS, CyberOS, dahlia, DarkOs, Darwin, Debian, Deepin, DesaOS, Devuan, DietPi, digital UNIX,
+# DracOS, DragonFly, Drauger, Droidian, Elementary, Elive, EncryptOS, EndeavourOS, Endless, Enso,
+# EuroLinux, EvolutionOS, eweOS, Exherbo, Exodia Predator OS, Fedora, Fedora Kinoite, Fedora
+# Sericea, Fedora Silverblue, Fedora_unicode, FemboyOS, Feren, Finnix, Floflis, FreeBSD, FreeMiNT,
+# Frugalware, Funtoo, Furreto, GalliumOS, Garuda, Gentoo, GhostBSD, glaucus, gNewSense, GNOME, GNU,
+# GoboLinux, GrapheneOS, Grombyang, Guix, Haiku, HamoniKR, HarDClanZ, Hash, Huayra, Hybrid, HydroOS,
+# Hyperbola, iglunix, instantOS, Interix, IRIX, Ironclad, Itc, januslinux, Kaisen, Kali, KaOS, KDE,
+# Kibojoe, Kogaion, Korora, KrassOS, KSLinux, Kubuntu, LainOS, LangitKetujuh, LaxerOS, LEDE,
+# LibreELEC, Linspire, Linux, Linux Lite, Linux Mint, Linux Mint Old, LinuxFromScratch, Live Raizo,
+# LMDE, Lubuntu, Lunar, mac, MacaroniOS, Mageia, Magix, MagpieOS, MainsailOS, Mandriva, Manjaro,
+# MassOS, MatuusOS, Maui, Mauna, Meowix, Mer, Minix, MIRACLE LINUX, MX, Namib, NekOS, Neptune,
+# NetBSD, Netrunner, Nitrux, NixOS, nixos_colorful, Nobara, NomadBSD, Nurunner, NuTyX, Obarun,
+# OBRevenge, OmniOS, Open Source Media Center, OpenBSD, openEuler, OpenIndiana, openKylin,
+# openmamba, OpenMandriva, OpenStage, openSUSE, openSUSE Leap, openSUSE Tumbleweed, OPNsense,
+# Oracle, orchid, OS Elbrus, PacBSD, Panwah, Parabola, parch, Pardus, Parrot, Parsix, PCBSD,
+# PCLinuxOS, pearOS, Pengwin, Pentoo, Peppermint, Peropesis, phyOS, PikaOS, Pisi, PNM Linux,
+# Pop!_OS, Porteus, PostMarketOS, Profelis SambaBOX, Proxmox, PuffOS, Puppy, PureOS, Q4OS, Qubes,
+# Qubyt, Quibian, Radix, Raspbian, ravynOS, Reborn OS, Red Star, Redcore, Redhat, Refracted Devuan,
+# Regata, Regolith, RhaymOS, rocky, Rosa, Sabayon, sabotage, Sailfish, SalentOS, Salient OS, Salix,
+# Sasanqua, Scientific, semc, Septor, Serene, SharkLinux, ShastraOS, Siduction, SkiffOS, Slackel,
+# Slackware, SliTaz, SmartOS, Soda, Solus, Source Mage, Sparky, Star, SteamOS, Stock Linux, Sulin,
+# SunOS, SwagArch, t2, Tails, Tatra, TeArch, TorizonCore, Trisquel, Twister, Ubuntu, Ubuntu Budgie,
+# Ubuntu Cinnamon, Ubuntu Kylin, Ubuntu MATE, Ubuntu Studio, Ubuntu Sway, Ubuntu Touch, Ubuntu-
+# GNOME, ubuntu_old02, Ultramarine Linux, unicodearch, Univalent, Univention, Uos, UrukOS, uwuntu,
+# Vanilla, Venom, VNux, Void, VzLinux, wii-linux-ngx, Windows, Windows 10, Windows 11, Windows95,
+# Wrt, Xenia, Xenia2, XFerience, Xray_OS, Xubuntu, yiffOS, Zorin have ascii logos.
 
 # NOTE: arch, dragonfly, Fedora, LangitKetujuh, nixos, redhat, Ubuntu have 'old' logo variants, use
 # {distro}_old to use them.
@@ -2106,6 +2108,7 @@ get_packages() {
     # Programming language package managers.
     if [[ -z "$package_minimal" ]]; then
         has pipx  && tot pipx list --short
+        has pip   && tot pip freeze
         has cargo && _cargopkgs="$(cargo install --list | grep -v '^ ')" && tot echo "$_cargopkgs"
 
         # Special case for npm: If has npm, we should list folders under node_modules instead of using npm list.
@@ -2178,9 +2181,19 @@ get_packages() {
             has bulge      && tot bulge list
             has pm         && tot-safe pm list packages
             has evox       && tot cat /var/evox/packages/DB
-            has squirrel   && tot ls /var/packages
+            has squirrel   && tot ls -w 1 /var/packages
             has anise      && tot anise s --installed
             has am         && pac "$(am -f --less)"
+            # Bonsai refers to the now archived repo https://github.com/mitchweaver/bonsai
+            has bonsai     && tot bonsai list
+            # Rad refers to https://github.com/glaucuslinux/rad
+            has rad        && tot rad -cl
+            # Rad was previously called 'Radula', some systems may still have the old name.
+            has radula     && tot radula -cl
+            # https://github.com/birb-linux/birb
+            has birb       && tot birb --list-installed
+            
+            has port       && pkgs_h=1 tot port installed && ((packages-=1))
 
             # Using the dnf package cache is much faster than rpm.
             if has dnf && type -p sqlite3 >/dev/null && [[ -f /var/cache/dnf/packages.db ]]; then
@@ -2311,9 +2324,19 @@ get_packages() {
             has snap && ps -e | grep -qFm 1 snapd >/dev/null && \
             pkgs_h=1 tot snap list && ((packages-=1))
 
-            # This is the only standard location for appimages.
-            # See: https://github.com/AppImage/AppImageKit/wiki
-            manager=appimage && has appimaged && dir ~/.local/bin/*.[Aa]pp[Ii]mage
+            # Get AppImageLauncher Application directory, 
+            # See: https://github.com/TheAssassin/AppImageLauncher/wiki/Configuration#settings-file
+            manager=appimage && has appimaged || [ -f "$HOME"/.config/appimagelauncher.cfg ] &&
+            if [ -f "$HOME"/.config/appimagelauncher.cfg ]; then
+                ALDIR=$(grep "destination" "$HOME/.config/appimagelauncher.cfg" --color=never | sed 's/^.*= //')
+                # shellcheck disable=SC2010
+                [ "$(ls -w 1 "$ALDIR" | grep -ic "AppImage")" = "0" ] && unset ALDIR
+            fi &&
+            if find "$HOME"/.local/bin/ -type f -name '*.[Aa]pp[Ii]mage' -print -quit | grep -q .; then
+                AIDIR="$HOME/.local/bin"
+            fi &&
+            dir "$AIDIR/*.[Aa]pp[Ii]mage \
+                $ALDIR/*.[Aa]pp[Ii]mage" 
 
             # Has devbox & is initialized
             has devbox && [[ "$(devbox global list)" != *"not activated"* ]] && tot devbox global list
@@ -2376,15 +2399,25 @@ get_packages() {
         ;;
     esac
 
+    # Count the total number of packages.
+    total_packages=0
+    for manager_info in "${managers[@]}"; do
+        count=$(echo "$manager_info" | awk '{print $1}')
+        total_packages=$((total_packages + count))
+    done
+
     if ((packages == 0)); then
         unset packages
-
     elif [[ $package_managers == on ]]; then
+        # List individual package manager counts
         printf -v packages '%s, ' "${managers[@]}"
         packages=${packages%,*}
-
     elif [[ $package_managers == tiny ]]; then
-        packages+=" (${manager_string%,*})"
+        # Show total count with package manager names
+        packages="$total_packages (${manager_string%,*})"
+    else
+        # Default to showing just the total count
+        packages="$total_packages"
     fi
 
     packages=${packages/pacman-key/pacman}
@@ -3819,11 +3852,18 @@ get_network() {
             ActiveNetwork=$(route get default | grep interface | awk '{print $2}')
             ActiveNetworkName=$(networksetup -listallhardwareports | grep -B 1 "$ActiveNetwork" | awk '/Hardware Port/{print}'| awk '{print $3}')
             if [[ $ActiveNetworkName == "Wi-Fi" ]]; then
-                LinkSpeed="$(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/maxRate/{print}' | awk '{print $2}' )Mbps"
+                temp_plist="/tmp/neofetch_system_profiler_SPAirPortDataType.xml" # PlistBuddy doesn't support reading from /dev/stdin
+                system_profiler -detailLevel basic -xml SPAirPortDataType > "$temp_plist"
+
+                PhyMode="$(PlistBuddy -c "Print 0:_items:0:spairport_airport_interfaces:0:spairport_current_network_information:spairport_network_phymode" "$temp_plist")" 2>/dev/null
+                LinkSpeed="$(PlistBuddy -c "Print 0:_items:0:spairport_airport_interfaces:0:spairport_current_network_information:spairport_network_rate" "$temp_plist")" 2>/dev/null
+                [ -n "$LinkSpeed" ] && LinkSpeed="$LinkSpeed Mbps"
             else
                 LinkSpeed="$(ifconfig "$ActiveNetwork" | awk '/media/{print}' | sed -E "s/.*\((.*)\).*/\1/")"
             fi
-            network="$ActiveNetwork: $ActiveNetworkName@$LinkSpeed"
+            network="$ActiveNetwork: $ActiveNetworkName"
+            [ -n "$PhyMode" ] && network+=" ($PhyMode)"
+            [ -n "$LinkSpeed" ] && network+=" @ $LinkSpeed"
         ;;
     esac
     while IFS=' ' read -r n i; do
@@ -6580,44 +6620,47 @@ ASCII:
                                 GNU/Linux, Aperture, Apricity, Arch, ArchBox, Archcraft,
                                 archcraft_ascii, archcraft_minimal, ARCHlabs, ArchMerge, ArchStrike,
                                 ArcoLinux, Arkane, ArseLinux, Artix, Arya, Asahi, AsteroidOS, astOS,
-                                Astra Linux, Athena, azos, Bedrock, BigLinux, Bitrig, BlackArch,
-                                blackPanther, BLAG, BlankOn, BlueLight, Bodhi, bonsai, BSD,
-                                BunsenLabs, CachyOS, Calculate, CalinixOS, Carbs, CBL-Mariner,
-                                CelOS, Center, CentOS, Chakra, ChaletOS, Chapeau, Chimera, ChonkySealOS,
-                                Chrom, Cleanjaro, Clear Linux OS, ClearOS, Clover, Cobalt, Condres,
-                                Container Linux by CoreOS, CRUX, Crystal Linux, Cucumber,
-                                CutefishOS, CuteOS, CyberOS, dahlia, DarkOs, Darwin, Debian, Deepin,
-                                DesaOS, Devuan, DietPi, digital UNIX, DracOS, DragonFly, Drauger,
-                                Droidian, Elementary, Elive, EncryptOS, EndeavourOS, Endless, Enso,
-                                EuroLinux, EvolutionOS, eweOS, Exherbo, Exodia Predator OS, Fedora,
+                                Astra Linux, Athena, azos, Bedrock, BigLinux, BigLinux_large,
+                                Bitrig, BlackArch, BlackMesa, blackPanther, BLAG, BlankOn,
+                                BlueLight, Bodhi, bonsai, BSD, BunsenLabs, CachyOS, Calculate,
+                                CalinixOS, Carbs, CBL-Mariner, CelOS, Center, CentOS, Chakra,
+                                ChaletOS, Chapeau, Chimera, ChonkySealOS, Chrom, Cleanjaro, Clear
+                                Linux OS, ClearOS, Clover, Cobalt, Condres, Container Linux by
+                                CoreOS, CRUX, Crystal Linux, Cucumber, CutefishOS, CuteOS, CyberOS,
+                                dahlia, DarkOs, Darwin, Debian, Deepin, DesaOS, Devuan, DietPi,
+                                digital UNIX, DracOS, DragonFly, Drauger, Droidian, Elementary,
+                                Elive, EncryptOS, EndeavourOS, Endless, Enso, EuroLinux,
+                                EvolutionOS, eweOS, Exherbo, Exodia Predator OS, Fedora, Fedora
+                                Kinoite, Fedora Sericea, Fedora Silverblue, Fedora_unicode,
                                 FemboyOS, Feren, Finnix, Floflis, FreeBSD, FreeMiNT, Frugalware,
-                                Funtoo, GalliumOS, Garuda, Gentoo, GhostBSD, glaucus, gNewSense,
-                                GNOME, GNU, GoboLinux, GrapheneOS, Grombyang, Guix, Haiku, HamoniKR,
-                                HarDClanZ, Hash, Huayra, Hybrid, HydroOS, Hyperbola, iglunix,
-                                instantOS, Interix, IRIX, Ironclad, Itc, januslinux, Kaisen, Kali,
-                                KaOS, KDE, Kibojoe, Kogaion, Korora, KrassOS, KSLinux, Kubuntu,
-                                LainOS, LangitKetujuh, LaxerOS, LEDE, LibreELEC, Linspire, Linux,
-                                Linux Lite, Linux Mint, Linux Mint Old, Live Raizo, LMDE, Lubuntu,
-                                Lunar, mac, Mageia, Magix,MagpieOS, MainsailOS, Mandriva, Manjaro, MassOS,
-                                MatuusOS, Maui, Meowix, Mer, Minix, MIRACLE LINUX, MX, Namib, NekOS,
-                                Neptune, NetBSD, Netrunner, Nitrux, NixOS, Nobara, NomadBSD,
-                                Nurunner, NuTyX, Obarun, OBRevenge, OmniOS, Open Source Media
-                                Center, OpenBSD, openEuler, OpenIndiana, openKylin, openmamba,
-                                OpenMandriva, OpenStage, openSUSE, openSUSE Leap, openSUSE
-                                Tumbleweed, OPNsense, Oracle, orchid, OS Elbrus, PacBSD, Panwah,
-                                Parabola, parch, Pardus, Parrot, Parsix, PCBSD, PCLinuxOS, pearOS,
-                                Pengwin, Pentoo, Peppermint, Peropesis, phyOS, PikaOS, Pisi, PNM
-                                Linux, Pop!_OS, Porteus, PostMarketOS, Profelis SambaBOX, Proxmox,
-                                PuffOS, Puppy, PureOS, Q4OS, Qubes, Qubyt, Quibian, Radix, Raspbian,
-                                ravynOS, Reborn OS, Red Star, Redcore, Redhat, Refracted Devuan,
-                                Regata, Regolith, RhaymOS, rocky, Rosa, Sabayon, sabotage, Sailfish,
-                                SalentOS, Salient OS, Salix, Sasanqua, Scientific, semc, Septor,
-                                Serene, SharkLinux, ShastraOS, Siduction, SkiffOS, Slackel,
+                                Funtoo, Furreto, GalliumOS, Garuda, Gentoo, GhostBSD, glaucus,
+                                gNewSense, GNOME, GNU, GoboLinux, GrapheneOS, Grombyang, Guix,
+                                Haiku, HamoniKR, HarDClanZ, Hash, Huayra, Hybrid, HydroOS,
+                                Hyperbola, iglunix, instantOS, Interix, IRIX, Ironclad, Itc,
+                                januslinux, Kaisen, Kali, KaOS, KDE, Kibojoe, Kogaion, Korora,
+                                KrassOS, KSLinux, Kubuntu, LainOS, LangitKetujuh, LaxerOS, LEDE,
+                                LibreELEC, Linspire, Linux, Linux Lite, Linux Mint, Linux Mint Old,
+                                LinuxFromScratch, Live Raizo, LMDE, Lubuntu, Lunar, mac, MacaroniOS,
+                                Mageia, Magix, MagpieOS, MainsailOS, Mandriva, Manjaro, MassOS,
+                                MatuusOS, Maui, Mauna, Meowix, Mer, Minix, MIRACLE LINUX, MX, Namib,
+                                NekOS, Neptune, NetBSD, Netrunner, Nitrux, NixOS, nixos_colorful,
+                                Nobara, NomadBSD, Nurunner, NuTyX, Obarun, OBRevenge, OmniOS, Open
+                                Source Media Center, OpenBSD, openEuler, OpenIndiana, openKylin,
+                                openmamba, OpenMandriva, OpenStage, openSUSE, openSUSE Leap,
+                                openSUSE Tumbleweed, OPNsense, Oracle, orchid, OS Elbrus, PacBSD,
+                                Panwah, Parabola, parch, Pardus, Parrot, Parsix, PCBSD, PCLinuxOS,
+                                pearOS, Pengwin, Pentoo, Peppermint, Peropesis, phyOS, PikaOS, Pisi,
+                                PNM Linux, Pop!_OS, Porteus, PostMarketOS, Profelis SambaBOX,
+                                Proxmox, PuffOS, Puppy, PureOS, Q4OS, Qubes, Qubyt, Quibian, Radix,
+                                Raspbian, ravynOS, Reborn OS, Red Star, Redcore, Redhat, Refracted
+                                Devuan, Regata, Regolith, RhaymOS, rocky, Rosa, Sabayon, sabotage,
+                                Sailfish, SalentOS, Salient OS, Salix, Sasanqua, Scientific, semc,
+                                Septor, Serene, SharkLinux, ShastraOS, Siduction, SkiffOS, Slackel,
                                 Slackware, SliTaz, SmartOS, Soda, Solus, Source Mage, Sparky, Star,
-                                SteamOS, Stock Linux, Sulin, SunOS, SwagArch, t2, Tails, TeArch,
-                                TorizonCore, Trisquel, Twister, Ubuntu, Ubuntu Budgie, Ubuntu
-                                Cinnamon, Ubuntu Kylin, Ubuntu MATE, Ubuntu Studio, Ubuntu Sway,
-                                Ubuntu Touch, Ubuntu-GNOME, ubuntu_old02, Ultramarine Linux,
+                                SteamOS, Stock Linux, Sulin, SunOS, SwagArch, t2, Tails, Tatra,
+                                TeArch, TorizonCore, Trisquel, Twister, Ubuntu, Ubuntu Budgie,
+                                Ubuntu Cinnamon, Ubuntu Kylin, Ubuntu MATE, Ubuntu Studio, Ubuntu
+                                Sway, Ubuntu Touch, Ubuntu-GNOME, ubuntu_old02, Ultramarine Linux,
                                 unicodearch, Univalent, Univention, Uos, UrukOS, uwuntu, Vanilla,
                                 Venom, VNux, Void, VzLinux, wii-linux-ngx, Windows, Windows 10,
                                 Windows 11, Windows95, Wrt, Xenia, Xenia2, XFerience, Xray_OS,
@@ -12094,6 +12137,32 @@ ${c1}               ${c1}¯¯¯¯        ¯¯¯¯¯¯¯${c2}       ¯¯¯¯
 EOF
         ;;
 
+        "nixos_colorful"*)
+            set_colors 4 6 4 6 4 6
+            read -rd '' ascii_data <<'EOF'
+${c1}          ▗▄▄▄       ${c2}▗▄▄▄▄    ▄▄▄▖
+${c1}          ▜███▙       ${c2}▜███▙  ▟███▛
+${c1}           ▜███▙       ${c2}▜███▙▟███▛
+${c1}            ▜███▙       ${c2}▜██████▛
+${c1}     ▟█████████████████▙ ${c2}▜████▛     ${c3}▟▙
+${c1}    ▟███████████████████▙ ${c2}▜███▙    ${c3}▟██▙
+${c6}           ▄▄▄▄▖           ${c2}▜███▙  ${c3}▟███▛
+${c6}          ▟███▛             ${c2}▜██▛ ${c3}▟███▛
+${c6}         ▟███▛               ${c2}▜▛ ${c3}▟███▛
+${c6}▟███████████▛                  ${c3}▟██████████▙
+${c6}▜██████████▛                  ${c3}▟███████████▛
+${c6}      ▟███▛ ${c5}▟▙               ${c3}▟███▛
+${c6}     ▟███▛ ${c5}▟██▙             ${c3}▟███▛
+${c6}    ▟███▛  ${c5}▜███▙           ${c3}▝▀▀▀▀
+${c6}    ▜██▛    ${c5}▜███▙ ${c4}▜██████████████████▛
+${c6}     ▜▛     ${c5}▟████▙ ${c4}▜████████████████▛
+${c5}           ▟██████▙       ${c4}▜███▙
+${c5}          ▟███▛▜███▙       ${c4}▜███▙
+${c5}         ▟███▛  ▜███▙       ${c4}▜███▙
+${c5}         ▝▀▀▀    ▀▀▀▀▘       ${c4}▀▀▀▘
+EOF
+        ;;
+
         "NixOS"*)
             set_colors 4 6
             read -rd '' ascii_data <<'EOF'
@@ -14368,22 +14437,24 @@ EOF
         "openSUSE Leap"* | "openSUSE_Leap"*)
             set_colors 2 7
             read -rd '' ascii_data <<'EOF'
-${c2}                 `-++:`
-               ./oooooo/-
-            `:oooooooooooo:.
-          -+oooooooooooooooo+-`
-       ./oooooooooooooooooooooo/-
-      :oooooooooooooooooooooooooo:
-    `  `-+oooooooooooooooooooo/-   `
- `:oo/-   .:ooooooooooooooo+:`  `-+oo/.
-`/oooooo:.   -/oooooooooo/.   ./oooooo/.
-  `:+ooooo+-`  `:+oooo+-   `:oooooo+:`
-     .:oooooo/.   .::`   -+oooooo/.
-        -/oooooo:.    ./oooooo+-
-          `:+ooooo+-:+oooooo:`
-             ./oooooooooo/.
-                -/oooo+:`
-                  `:/.
+${c2}            ====
+           ======
+         ==== ====+
+       +====    +====
+     +===+        ====
+    ====            ====
+  +===               +====
+  ====               +====
+   =====            ====
+     +===+        =====
+  ==+  =====    +===+  ===
+  ====   ==== =====  =====
+    ====  =======   ====
+      ====  ===   ====
+       ====+    ====
+         ==== =====
+           ======
+             ==
 EOF
         ;;
 
@@ -14400,22 +14471,57 @@ TTTTTTTTTT
 EOF
         ;;
 
+        "openSUSE Tumbleweed-Slowroll"* | "openSUSE_Slowroll"*)
+            set_colors 2 7
+            read -rd '' ascii_data <<'EOF'
+${c2}              _aaaymQQmwaaa,
+          ,wWQQQD????????$QQQQa,.
+       _wQQB?"              ??QQQa,
+     sQQD^                      ?QQ6\
+    yWW'                          4QQg
+  ,QQD          .aaaaaaaa          ^4Q6
+ ,mQP        _wWQW?????YWWQa,        4Qm
+ jQ@        wWW?'        ^4QQc       ^$QL
+,QQ'       jWW'            )QW\       ]QQ
+|QQ       ,QW'              ]QQ       ^QQ|
+|QQ       |QQ               ]QQ        QQ|
+|QQ        4Qg              ]QQ       .QQ|
+'QQ6       '$WQac.         _QQ(       jQQ
+ ]QQw        "?QWQQf      _mQP       ,QQ(
+  4QQga                  wQQP       ,mQ?
+   4QQQga,            saQWP'       jQQf
+    ?QQQQQQwaaaaaaaayWWW?'       _mQ@'
+      ?WQQQP?9VWUV???^        _amQP^
+        "4QQQaa,          ,awQQQ?^
+           "?VQQQQQQQQQQQQQQP?'
+EOF
+        ;;
+
         "openSUSE Tumbleweed"* | "openSUSE_Tumbleweed"*)
             set_colors 2 7
             read -rd '' ascii_data <<'EOF'
-${c2}                                     ......
-     .,cdxxxoc,.               .:kKMMMNWMMMNk:.
-    cKMMN0OOOKWMMXo. A        ;0MWk:'      ':OMMk.
-  ;WMK;'       'lKMMNM,     :NMK'             'OMW;
- cMW;             WMMMN   ,XMK'                 oMM.
-.MMc             ''^*~l. xMN:                    KM0
-'MM.                   .NMO                      oMM
-.MM,                 .kMMl                       xMN
- KM0               .kMM0' .dl>~,.               .WMd
- 'XM0.           ,OMMK'    OMMM7'              .XMK
-   *WMO:.    .;xNMMk'       NNNMKl.          .xWMx
-     ^ONMMNXMMMKx;          V  'xNMWKkxllox0NMWk'
-         '''''                    ':dOOXXKOxl'
+${c2}         JJJJJJJJ
+      JJJJJJJJJJJJJJ
+    JJJJJJ   =JJJJJJJ
+   JJJJ      =JJJ JJJJ
+   JJJ       =JJJ   JJJ
+  JJJJ       =JJJ   JJJ
+  JJJJJJJJJJJJJJJ   JJJJ
+   JJJJJJJJJJJJJJ   JJJJ
+   JJJJ             JJJJ
+    JJJJJ=          JJJJ
+      JJJJJJJJJJJJJJJJJJJJJJJJJJJJJ=
+        =JJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
+                    JJJJ         =JJJJJJ
+                    JJJJ            =JJJJ
+                    JJJJ   JJJJJJJJJJJJJJ
+                    JJJJ   JJJJJJJJJJJJJJJ
+                    JJJJ   JJJJ       JJJJ
+                     JJJ   JJJJ       JJJ
+                     JJJJJ JJJJ      JJJJ
+                      =JJJJJJJJ   JJJJJJ
+                        JJJJJJJJJJJJJJ
+                           JJJJJJJ=
 EOF
         ;;
 
