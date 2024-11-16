@@ -6,7 +6,7 @@ neofetch with pride flags, plus some extras like the minor-attracted person and 
 
 ## Installation
 
-Install Python >= 3.7 first, then:
+Install Python >= 3.7 first (including pip if that's a separate package on your distro), then:
 
 ```bash
 git clone https://github.com/colleirose/hyfetch-extra.git
